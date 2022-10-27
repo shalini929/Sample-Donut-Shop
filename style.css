@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+/* GENERAL */
+
+a{
+    color: #e67700;
+}
+
+li{
+    list-style: none;
+}
+
+.heading-secondary{
+    color: #e67700;
+    font-size: 4.8rem;
+    text-transform: capitalize;
+}
+
+.divider-image{
+    display: block;
+    margin: 4rem auto;
+}
+
+
+/* NAVIGATION BAR */
+
+
+.main-nav{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    height: 100%;
+}
+
+.nav-option:link, .nav-option:visited{
+    color: #e67700;
+    text-decoration: none;
+}
+
+.nav-option:hover, .nav-option:active{
+    background: url(images/tiny-donut.png) no-repeat ;
+    background-position: 50% 0 ;
+    padding: 2rem 0;
+
+}
+
+.logo{
+    opacity: 0;
+}
+
+.logo-image{
+    background: url(images/logo-hover.png);
+    height: fit-content;
+    width: fit-content;
+}
+
+.logo-image:hover{
+    background: url(images/logo.png) no-repeat;
+}
+
+
+/* HERO SECTION */
+
+section.hero{
+    background-color: #fcc419;
+}
+
+.hero-image{
+    background-image: url(images/donut-shoppe.png);
+    /* width: 100vw; */
+    height: 55rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.hero-image::before{
+    content: "";
+    background-image: url(images/fresh-whole-ingredients.png);
+    height: 19rem;
+    width: 15rem;
+    position: absolute;
+    top: -5%;
+    right: 23%;
+}
+
+
+
+/* ABOUT SECTION */
+
+.about-heading{
+    text-align: center;
+    margin: 2rem auto 0;
+}
+
+em{
+    color: #5c320e;
+}
+
+.tag-line{
+    color: #5c320e;
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 3.2rem;
+}
+
+.divider-image-header{
+    display: block;
+    margin: 0 auto;
+}
+
+.story{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin: 0 16rem 4rem;
+}
+
+
+.about-description{
+    color: #5c320e;
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.award-description{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+}
+
+p strong{
+    display: block;
+}
+
+.award-image{
+    justify-self: center;
+}
+
+.award-text{
+    color: #5c320e;
+    font-size: 2rem;
+}
+
+/* NEWS SECTION */
+
+.news{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin: 0 16rem;
+    gap: 6rem;
+}
+
+.events{
+    display: grid;
+    gap: 2rem;
+}
+
+.event-name{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #5c320e;
+    text-transform: capitalize;
+}
+
+.time{
+    color: #e67700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.event-text{
+    color: #5c320e;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.under{
+    font-size: 1.2rem;
+    color: #5c320e;
+}
+
+.event1{
+    background: url(images/icon-news.png) top left no-repeat;
+    padding-left: 6rem;
+}
+
+.event2{
+    background: url(images/icon-calendar.png) top left no-repeat;
+    padding-left: 6rem;
+}
+
+.news-image{
+    width: 100%;
+    height: 75%;
+}
+
+/* FOOTER */
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
+    background-color: #5c320e;
+    justify-content: center;
+    padding: 5rem;
+    place-items: center;
+}
+
+.footer1, .footer2{
+    padding-left: 6rem;
+    font-size: 1.8rem;
+}
+
+.footer1{
+    background: url(images/icon-recycle.png) top left no-repeat;
+}
+
+.footer2{
+    background: url(images/icon-apple.png) top left no-repeat;
+    padding-block: .8rem;
+}
